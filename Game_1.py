@@ -4,6 +4,7 @@ import time
 
 # Set up the screen
 print("check the turtle screen in a separate window")
+print("added additional print line")
 screen = turtle.Screen()
 screen.title("Turtle Race Game")
 screen.bgcolor("lightblue")
