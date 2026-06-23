@@ -30,13 +30,17 @@ fruit = [
     "Tangerine", "Ugli Fruit", "Watermelon", "White Currant", "Yuzu"
 ]
 print("🎮 Welcome to Hangman!")
-category = input("There are two categories, 1 is for sport and 2 is for fruits. Please select in 1 or 2.")
-if category == 1:
+option = input("There are two categories, 1 is for sport and 2 is for fruits. Please select in 1 or 2.")
+if option == "1":
+    category = sport
+
+elif option == "2":
     category = fruit
 
-if category == 2:
+else:
+    print("Invalid option. Defaulting to sport category.")
     category = sport
-          
+
 word = random.choice(category).lower() # Randomly pick a word
 
 # Variables to keep track of the game
