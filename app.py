@@ -1,10 +1,3 @@
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-@app.route('/')
-def home():
-    return render_template('kush1.html')
-
-if __name__ == '__main__':
-    app.run(debug=True)
+a= int(input('Enter first number: '))
+b =int(input('Enter second number: '))
+print('Sum =',a + b)
