@@ -123,11 +123,11 @@ while running:
 
         # Draw enemies
         for enemy in enemies:
-            pygame.draw.rect(screen, BLUE, enemy["rect"])
+            pygame.draw.rect(screen, enemy["rect"])
 
         # Draw coins
         for coin in coins:
-            pygame.draw.circle(screen, GOLD, coin.center, 100)
+            pygame.draw.circle(screen, GOLD, coin.center, 20)
 
         # Score increase over time
         score += 0.02
